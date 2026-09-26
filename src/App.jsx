@@ -1,12 +1,12 @@
-import { useState } from 'react'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <h1>My Image Gallery</h1>
+      <h1>Welcome to ManiqueMan</h1>
 
       <div className="image-container">
 
