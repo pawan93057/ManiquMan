@@ -19,7 +19,7 @@ function DataDeletion() {
 
         <p>
           <strong>Email:</strong>{" "}
-          pawan.kumar.chauhan.343@gmail.com
+          pc17805610@gmail.com
         </p>
 
         <p>
@@ -42,7 +42,7 @@ function DataDeletion() {
         </p>
 
         <p>
-          Email: pawan.kumar.chauhan.343@gmail.com
+          Email: pc17805610@gmail.com
         </p>
 
       </div>

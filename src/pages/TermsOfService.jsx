@@ -48,7 +48,7 @@ function TermsOfService() {
         <h2>6. Contact</h2>
 
         <p>
-          Email: pawan.kumar.chauhan.343@gmail.com
+          Email: pc17805610@gmail.com
         </p>
 
       </div>
