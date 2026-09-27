@@ -1,66 +1,48 @@
+import { Routes, Route, Navigate } from "react-router-dom";
 
-import './App.css'
+import Layout from "./components/Layout";
+
+import Home from "./pages/Home";
+import Privacy from "./pages/Privacy";
+import TermsOfService from "./pages/TermsOfService";
+import DataDeletion from "./pages/DataDeletion";
+import NotFound from "./pages/NotFound";
+
+import "./App.css";
 
 function App() {
-
-
   return (
-    <>
-      <h1>Welcome to ManiqueMan</h1>
+    <Layout>
+      <Routes>
 
-      <div className="image-container">
+        {/* Home */}
+        <Route path="/" element={<Home />} />
 
-        <div className="image-card">
-          <img
-            src="/assets/images/image1.png"
-            alt="Image 1"
-          />
-          <h2>Image 1</h2>
-        </div>
+        {/* Legal Pages */}
+        <Route path="/privacy-policy" element={<Privacy />} />
 
-        <div className="image-card">
-          <img
-            src="/assets/images/image2.png"
-            alt="Image 2"
-          />
-          <h2>Image 2</h2>
-        </div>
+        <Route
+          path="/terms-of-service"
+          element={<TermsOfService />}
+        />
 
-        <div className="image-card">
-          <img
-            src="/assets/images/image3.png"
-            alt="Image 3"
-          />
-          <h2>Image 3</h2>
-        </div>
+        <Route
+          path="/data-deletion"
+          element={<DataDeletion />}
+        />
 
-        <div className="image-card">
-          <img
-            src="/assets/images/image4.png"
-            alt="Image 4"
-          />
-          <h2>Image 4</h2>
-        </div>
+        {/* Optional 404 page */}
+        <Route path="/404" element={<NotFound />} />
 
-        <div className="image-card">
-          <img
-            src="/assets/images/image5.png"
-            alt="Image 5"
-          />
-          <h2>Image 5</h2>
-        </div>
+        {/* Any invalid URL -> Home */}
+        <Route
+          path="*"
+          element={<Navigate to="/" replace />}
+        />
 
-        <div className="image-card">
-          <img
-            src="/assets/images/image6.png"
-            alt="Image 6"
-          />
-          <h2>Image 6</h2>
-        </div>
-
-      </div>
-    </>
-  )
+      </Routes>
+    </Layout>
+  );
 }
 
-export default App
+export default App;
