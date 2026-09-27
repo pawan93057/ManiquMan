@@ -69,7 +69,7 @@ function Privacy() {
 
         <p>
           <strong>Email:</strong>{" "}
-          pc17805610@gmail.com
+          pawan.kumar.chauhan.343@gmail.com
         </p>
 
       </div>
